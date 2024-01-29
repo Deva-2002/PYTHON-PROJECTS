@@ -1,0 +1,49 @@
+# computer quiz game
+
+print("lets play the computer game")
+
+x=input("are you ready to play? ")
+
+score=0
+
+if x.lower()!='yes':
+    quit()
+print("lets begin")
+
+answer=input("what is the full form of cpu? ")
+if answer.lower()=="central processing unit":
+    print("correct answer")
+    score+=1
+else :
+    print("incorrect")
+
+answer=input("what is the full form of psu? ")
+if answer.lower()=="power supply":
+    print("correct answer")
+    score+=1
+else :
+    print("incorrect")
+
+answer=input("what is the full form of ram? ")
+if answer.lower()=="random access memory":
+    print("correct answer")
+    score+=1
+else :
+    print("incorrect")
+
+answer=input("what is the full form of gpu? ")
+if answer.lower()=="graphic processing unit":
+    print("correct answer")
+    score+=1
+else :
+    print("incorrect")
+
+answer=input("what is the full form of rom? ")
+if answer.lower()=="read only memory":
+    print("correct answer")
+    score+=1
+else :
+    print("incorrect")
+
+print("you got "+str(score)+" correct answers")
+print("your percentage is "+str((score/5)*100)+"")
